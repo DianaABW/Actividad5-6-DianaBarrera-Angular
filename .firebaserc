@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "actividadfinal2023-d9ddc": {
+      "hosting": {
+        "app": [
+          "actividadfinal2023-d9ddc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "actividadfinal2023-d9ddc"
+  }
+}

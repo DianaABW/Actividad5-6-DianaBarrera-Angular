@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/" color="danger"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Productos
+            <ion-icon name="bag-outline"></ion-icon>
+        </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+    
+    <div class="mat-elevation-z8">
+      <ion-card>
+        <ion-card-header>
+            <ion-card-title>Desayunos Sorpresa</ion-card-title>
+            <ion-card-subtitle>Acomodamos tu pedido a tu gusto, el precio puede variar segun tus opciones</ion-card-subtitle>
+            <ion-card-subtitle>$100.000</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="https://www.detallesalinstante.com.co/1489-large_default/desayuno-sorpresa-unico.jpg">
+        </ion-card-content>
+        <ion-chip (click)="openDetailsWithState()" color="danger">
+             <ion-icon name="heart-outline"></ion-icon>
+            <ion-label>Comprar</ion-label>
+        </ion-chip>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+          <ion-card-title>Caja Magica</ion-card-title>
+          <ion-card-subtitle>Acomodamos tu pedido a tu gusto, el precio puede variar segun tus opciones</ion-card-subtitle>
+          <ion-card-subtitle>$90.000</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="https://www.detallesalinstante.com.co/1325-large_default/ancheta-caja-magica.jpg">
+      </ion-card-content>
+      <ion-chip (click)="openDetailsWithState()" color="danger">
+           <ion-icon name="heart-outline"></ion-icon>
+          <ion-label>Comprar</ion-label>
+      </ion-chip>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+        <ion-card-title>Caja Encanto</ion-card-title>
+        <ion-card-subtitle>Acomodamos tu pedido a tu gusto, el precio puede variar segun tus opciones</ion-card-subtitle>
+        <ion-card-subtitle>$120.000</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="https://www.detallesalinstante.com.co/1384-large_default/encanto.jpg">
+    </ion-card-content>
+    <ion-chip (click)="openDetailsWithState()" color="danger">
+         <ion-icon name="heart-outline"></ion-icon>
+        <ion-label>Comprar</ion-label>
+    </ion-chip>
+</ion-card>
+
+      </div>
+  </ion-content>

@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-title>Tiendas
+          <ion-icon name="heart"></ion-icon>
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+      <ion-card-header>
+          <ion-card-title>Foristeria las nieves</ion-card-title>
+          <ion-card-subtitle>El mejor detalle en todo momento</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+          Promocion en arreglos
+      </ion-card-content>
+      <ion-chip (click)="openDetailsWithState1()">
+          <ion-avatar>
+              <img src="https://previews.123rf.com/images/jemastock/jemastock1706/jemastock170600990/79349045-color-cray%C3%B3n-raya-dibujos-animados-fachada-tienda-tienda-vector-illustration.jpg">
+          </ion-avatar>
+          <ion-label>Ir a tienda</ion-label>
+      </ion-chip>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-header>
+          <ion-card-title>Detalles Aleja</ion-card-title>
+          <ion-card-subtitle>Un buen y lindo sentimiento</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+          Visita nuestra tienda virtual
+      </ion-card-content>
+      <ion-chip (click)="openDetailsWithState2()">
+          <ion-avatar>
+              <img src="https://png.pngtree.com/png-clipart/20200701/original/pngtree-gift-icon-design-illustration-png-image_5347918.jpg">
+          </ion-avatar>
+          <ion-label>Ir a tienda</ion-label>
+      </ion-chip>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-header>
+          <ion-card-title>Luciana Love</ion-card-title>
+          <ion-card-subtitle>Amor y más</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+          Comentanos tus dudas y te daremos una pronta respuesta
+      </ion-card-content>
+      <ion-chip (click)="openDetailsWithState3()">
+          <ion-avatar>
+              <img src="https://th.bing.com/th/id/OIP.tVRiMQYcsCLaENAAmUtaUAHaHO?pid=ImgDet&rs=1">
+          </ion-avatar>
+          <ion-label>Ir a tienda</ion-label>
+      </ion-chip>
+  </ion-card>
+
+</ion-content>

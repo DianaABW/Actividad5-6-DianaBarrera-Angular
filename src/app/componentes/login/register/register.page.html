@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Registrar Usuario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <form [formGroup]="migrupo1" (ngSubmit)="onRegister()">
+      <ion-item lines="full">
+          <ion-label position="floating"> Email</ion-label>
+          <ion-input formControlName="direccion" type="text" name="direccion"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+          <ion-label position="floating"> Contraseña</ion-label>
+          <ion-input formControlName="contraseña" type="password" name="contraseña"></ion-input>
+      </ion-item>
+      <ion-button type="submit" [disabled]="migrupo1.invalid" expand="block" color="danger">Enviar
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+    </form>
+    <ion-row>
+      <ion-col>
+        <p>
+          <a routerLink="/login">¿Ya tienes una cuenta? </a>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+  

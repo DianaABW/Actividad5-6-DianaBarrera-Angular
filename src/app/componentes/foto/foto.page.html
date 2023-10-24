@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/" color="danger"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Galeria de Imagenes
+          <ion-icon name="images"></ion-icon>
+        </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <img class="img">
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    
+      <ion-card>
+        <ion-item>
+          <ion-label position="stacked">mensaje</ion-label>
+          <ion-input [(ngModel)]="mensaje"></ion-input>
+        </ion-item>
+  
+        <ion-fab-button (click)="takePicture()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+      </ion-card>
+    </ion-fab>
+  
+      
+    <ion-grid>
+        <ion-row>
+          <ion-col size='6' *ngFor="let fototurno of album; index as position">
+            <ion-img src="{{fototurno.base64 ? fototurno.base64 : fototurno.webviewPath}}"></ion-img>
+            <h1>{{fototurno.mensaje ? fototurno.mensaje : fototurno.mensaje}}</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+  
+    
+  </ion-content>
+  <script
+    type="module"
+    src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+  ></script>

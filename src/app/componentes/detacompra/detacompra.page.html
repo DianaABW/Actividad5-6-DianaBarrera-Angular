@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/" color="danger"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Listo
+            <ion-icon name="sparkles-outline"></ion-icon>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <br>
+    <ion-item>
+        <ion-avatar slot="start">
+            <img src="https://thumbs.dreamstime.com/z/el-coraz%C3%B3n-en-c%C3%ADrculo-form%C3%B3-garabato-sucio-enredado-enred%C3%B3-una-mano-del-de-la-tinta-dibujada-con-cepillo-aislado-fondo-blanco-143362374.jpg">
+        </ion-avatar>
+        <ion-card-subtitle>Por favor, revisa tu correo personal y para continuar con el proceso de compra. Gracias
+            <ion-icon name="heart-outline"></ion-icon>
+        </ion-card-subtitle>
+    </ion-item>
+    <ion-card *ngIf="misdatos">
+        <ion-card-header>
+            <ion-card-title>
+                
+
+            </ion-card-title>
+            <ion-card-subtitle>
+               
+
+            </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-title>
+            
+            
+        </ion-card-title>
+    </ion-card>
+    <ion-button expand="block" color="danger" (click)="openDetailsWithState()">
+        Productos
+        <ion-icon name="bag-outline"></ion-icon>
+    </ion-button>
+</ion-content>

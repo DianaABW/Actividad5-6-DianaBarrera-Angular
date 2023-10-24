@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/" color="danger"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Formulario
+            <ion-icon name="reader-outline"></ion-icon>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <img class="icon" src="" alt="">
+    <form action="" [formGroup]="migrupo1" (ngSubmit)="salvarFormulario()">
+        <ion-item>
+            <ion-label position="floating"> Numero de documento</ion-label>
+            <ion-input formControlName="codigo" type="text" name="codigo"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label position="floating"> Nombre</ion-label>
+            <ion-input formControlName="nombre" type="text" name="nombre"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+            <ion-label position="floating"> Direccion de correo</ion-label>
+            <ion-input formControlName="direccion" type="text" name="direccion"></ion-input>
+        </ion-item>
+
+        <ion-button type="submit" [disabled]="migrupo1.invalid" expand="block" color="danger">Enviar
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+    </form>
+
+</ion-content>

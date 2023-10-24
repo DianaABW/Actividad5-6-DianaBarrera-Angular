@@ -1,0 +1,38 @@
+.center-span {
+    display: block;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-form {
+    min-width: 80%;
+    max-width: 90%;
+    margin: 0px auto;
+    background: rgba(212, 17, 17, 0.801);
+    padding: 3rem 2rem;
+    margin: auto;
+    border-radius: 3.5rem;
+    background-color: #850439;
+    color: rgb(218, 197, 197);
+    margin-top: 2rem;
+}
+
+.custom-form input {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(231, 16, 16, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    background: #ebf5fc;
+}
